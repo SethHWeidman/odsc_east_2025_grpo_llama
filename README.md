@@ -18,7 +18,7 @@ To:
 
 all on a single A100 GPU!
 
-![Proportion Plot](proportion_plot.png)
+![Proportion Plot](images/proportion_plot.png)
 
 ## Innovations
 
@@ -30,6 +30,26 @@ actually works**:
   out of 100 answers right from the dataset.
 * After adding the LoRa adapters, and training them in Google Colab (including lots of tips on how
   to do this, see below), the model gets **92** out of 100 answers correct!
+
+## Statistical significance
+
+How do we know the fine-tuning process really did produce a model that "learned", as opposed to one that just did slightly better by chance? I'll briefly discuss how I arrived at the "73" and "92" numbers above and the tests I ran to determine if the difference was significant.
+
+The sample size of 100 comes from randomly sampling 20 cases from the test set, generating five
+answers for each one, and manually inspecting each answer to confirm whether it was correct (if the
+model outputted "$15" when the correct answer was "15", I counted it as correct). This leads
+to a small amount of ambiguity in the estimates, since in a small amount of cases (just one of the
+100 answers observed) it was ambiguous whether the model's generated answer was correct. Even
+taking the more "conservative" case - counting a "borderline" answer from the pre-trained model as
+correct - fine-tuning does indeed result in a statistically signficant improvement in model
+performance (p-value of 0.0004).
+
+Furthermore, even considering a much more conservative test - one that treats these as just 20 observations, each one having a `float` value from 0.0 to 1.0 - produces a p-value of 0.0256.
+
+Since these 20 observations were chosen randomly from the test set I conclude that the fine-tuning
+process - despite only running through 800 examples, see "[Early stopping](#early-stopping)" below
+- did in fact make the model better at answering questions from the GSM8K dataset. See
+  `stats_tests.py` for the details.
 
 ## Learnings related to getting the training to work
 
@@ -59,6 +79,10 @@ on a single A100, to work in a Google Colab environment where exiting your brows
 memory of your session. The `Training` notebook saves the training run to S3 every 25 training
 steps, optionally restarting training from a previously-saved-on-S3 checkpoint, and the
 `Fine-Tune-Results` notebook reads in an S3 checkpoint for downstream use.
+
+### Early stopping
+
+TODO
 
 ## The four notebooks
 
