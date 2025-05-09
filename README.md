@@ -31,10 +31,11 @@ actually works**:
 * After adding the LoRa adapters, and training them in Google Colab (including lots of tips on how
   to do this, see below), the model gets **92** out of 100 answers correct!
 
-## (WIP) Learnings
+## Learnings related to getting the training to work
 
-There were two entirely different kinds of learnings: around the reward functions, the coding
-environment.
+There were two entirely different kinds of learnings: around the reward functions, and the coding
+environment. The coding environment learnings are encapsulated in a set of helper functions that
+are mostly in the `2-ODSC_East_2025_GRPO_on_Llama-Training.ipynb` notebook.
 
 ### Reward functions
 
