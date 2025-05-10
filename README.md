@@ -18,7 +18,7 @@ To:
 
 all on a single A100 GPU!
 
-![Proportion Plot](images/proportion_plot.png)
+![Proportion Plot](https://data-science-talks.s3.us-east-1.amazonaws.com/odsc_east_2025/images/proportion_plot.png)
 
 ## Innovations
 
@@ -33,7 +33,9 @@ actually works**:
 
 ## Statistical significance
 
-How do we know the fine-tuning process really did produce a model that "learned", as opposed to one that just did slightly better by chance? I'll briefly discuss how I arrived at the "73" and "92" numbers above and the tests I ran to determine if the difference was significant.
+How do we know the fine-tuning process really did produce a model that "learned", as opposed to one
+that just did slightly better by chance? I'll briefly discuss how I arrived at the "73" and "92"
+numbers above and the tests I ran to determine if the difference was significant.
 
 The sample size of 100 comes from randomly sampling 20 cases from the test set, generating five
 answers for each one, and manually inspecting each answer to confirm whether it was correct (if the
@@ -44,7 +46,10 @@ taking the more "conservative" case - counting a "borderline" answer from the pr
 correct - fine-tuning does indeed result in a statistically signficant improvement in model
 performance (p-value of 0.0004).
 
-Furthermore, even considering a much more conservative test - one that treats these as just 20 observations, each one having a `float` value from 0.0 to 1.0 - produces a p-value of 0.0256.
+Furthermore, even considering a much more conservative test - one that treats these as just 20
+observations, each one having a `float` value from 0.0 to 1.0 - produces a p-value of 0.0256.
+
+![Proportion Plot](https://data-science-talks.s3.us-east-1.amazonaws.com/odsc_east_2025/images/proportions_difference_plot.png)
 
 Since these 20 observations were chosen randomly from the test set I conclude that the fine-tuning
 process - despite only running through 800 examples, see "[Early stopping](#early-stopping)" below
@@ -82,7 +87,9 @@ steps, optionally restarting training from a previously-saved-on-S3 checkpoint, 
 
 ### Early stopping
 
-TODO
+WIP
+
+![Proportion Plot](https://data-science-talks.s3.us-east-1.amazonaws.com/odsc_east_2025/images/training_loss_plot.png)
 
 ## The four notebooks
 
