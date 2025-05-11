@@ -3,17 +3,17 @@
 This repo illustrates how to use "industry-standard" libraries - all of which happen to be from the
 [HuggingFace](https://huggingface.co) stack:
 
-* [transformers](https://github.com/huggingface/transformers)
-* [datasets](https://github.com/huggingface/datasets)
-* [peft](https://github.com/huggingface/peft)
-* [trl](https://github.com/huggingface/trl)
+- [transformers](https://github.com/huggingface/transformers)
+- [datasets](https://github.com/huggingface/datasets)
+- [peft](https://github.com/huggingface/peft)
+- [trl](https://github.com/huggingface/trl)
 
 To:
 
-* Download the [8B parameter Llama3.1 model](https://ai.meta.com/blog/meta-llama-3-1/).
-* Add [LoRa](https://arxiv.org/abs/2106.09685) adapters to the model.
-* Read in the [GSM8K dataset](https://openai.com/index/solving-math-word-problems/) frop OpenAI.
-* Fine-tuning the model's LoRa adapters using GRPO, introduced by DeepSeek in their
+- Download the [8B parameter Llama3.1 model](https://ai.meta.com/blog/meta-llama-3-1/).
+- Add [LoRa](https://arxiv.org/abs/2106.09685) adapters to the model.
+- Read in the [GSM8K dataset](https://openai.com/index/solving-math-word-problems/) frop OpenAI.
+- Fine-tuning the model's LoRa adapters using GRPO, introduced by DeepSeek in their
   [DeepSeekMath](https://arxiv.org/pdf/2402.03300) paper.
 
 all on a single A100 GPU!
@@ -24,11 +24,11 @@ all on a single A100 GPU!
 
 There are other repos and tutorials showing how to use the libraries from the `transformers`
 ecosystem. **The difference with this repo is that we put the pieces together in a way that
-actually works**: 
+actually works**:
 
-* Before adding LoRa adapters and fine-tuning, upon manual inspection, the model gets **72 or 73**
+- Before adding LoRa adapters and fine-tuning, upon manual inspection, the model gets **72 or 73**
   out of 100 answers right from the dataset.
-* After adding the LoRa adapters, and training them in Google Colab (including lots of tips on how
+- After adding the LoRa adapters, and training them in Google Colab (including lots of tips on how
   to do this, see below), the model gets **92** out of 100 answers correct!
 
 ## Statistical significance
@@ -53,8 +53,8 @@ observations, each one having a `float` value from 0.0 to 1.0 - produces a p-val
 
 Since these 20 observations were chosen randomly from the test set I conclude that the fine-tuning
 process - despite only running through 800 examples, see "[Early stopping](#early-stopping)" below
-- did in fact make the model better at answering questions from the GSM8K dataset. See
-  `stats_tests.py` for the details.
+\- did in fact make the model better at answering questions from the GSM8K dataset. See
+`stats_tests.py` for the details.
 
 ## Learnings related to getting the training to work
 
@@ -68,14 +68,14 @@ Reward functions matter for GRPO, and tweaking them took some trial and error. P
 reward functions you can find in other tutorials resulted in the model producing degenerate outputs
 that fit a specified output format but don't have meaningful content (won't call out any one in
 particular, but you can find what I'm referring to through Googling). Some reward function
-combinations allowed the model to simply  More generally, many reward functions seemed to result in
-the model producing answers that were too short to meaningfully reason through the problem. 
-  
+combinations allowed the model to simply More generally, many reward functions seemed to result in
+the model producing answers that were too short to meaningfully reason through the problem.
+
 The key for this experiment ended up being to incentize getting the answer right strongly, but
 contingent on the answer being sufficiently long. I ended up giving a reward of `5.0` for the
 correct answer, with a penalty for answers less than 100 tokens, and an automatic `0.0` for any
 answer less than 50 tokens. The model could only earn up to `1.5` for formatting the answer
-correctly. 
+correctly.
 
 ### Coding environment
 
@@ -99,25 +99,31 @@ GPUs, you may need to sign up for a $9.99/month Google Colab Pro subscription.
 
 1. `1-ODSC_East_2025_GRPO_on_Llama-Baseline.ipynb` shows how to:
 
-* Load in the baseline ~8B parameter Llama 3.1 model
-* Load in the GSM8K dataset
-* Generate responses using the baseline model, saving the results to S3 along the way
+- Load in the baseline ~8B parameter Llama 3.1 model
+- Load in the GSM8K dataset
+- Generate responses using the baseline model, saving the results to S3 along the way
 
 2. `2-ODSC_East_2025_GRPO_on_Llama-Training.ipynb` shows how to:
 
-* Load in the baseline ~8B parameter Llama 3.1 model
-* Load in the GSM8K dataset
-* Add LoRa adapters to the model
-* Set up GRPO training for this model and dataset, including specifying the reward functions
-* Add a callback to training that saves the checkpointed model to S3 every 25 training steps
-* Also log the rewards in the notebook every 25 steps
-* Train the model, optionally restarting training from one of the checkpoints
+- Load in the baseline ~8B parameter Llama 3.1 model
+- Load in the GSM8K dataset
+- Add LoRa adapters to the model
+- Set up GRPO training for this model and dataset, including specifying the reward functions
+- Add a callback to training that saves the checkpointed model to S3 every 25 training steps
+- Also log the rewards in the notebook every 25 steps
+- Train the model, optionally restarting training from one of the checkpoints
 
 3. `3-ODSC_East_2025_GRPO_on_Llama-Fine-Tune-Results.ipynb` shows how to:
 
-* Load in the baseline ~8B parameter Llama 3.1 model
-* Load in the GSM8K dataset
-* Load in one of the training checkpoints and re-evaluate the model with the trained LoRa adapters
+- Load in the baseline ~8B parameter Llama 3.1 model
+- Load in the GSM8K dataset
+- Load in one of the training checkpoints and re-evaluate the model with the trained LoRa adapters
 
 4. Finally, `4_ODSC_East_2025_GRPO_on_Llama-Compare-Results.ipynb` shows how to compare the results
    of two model variants. This was used to evaluate the results pre-and-post fine-tuning.
+
+## (WIP) Swap ins and outs
+
+[Swap-ins-and-outs](problems/swap_ins_and_outs.md) contains example questions that the post-fine
+tuning model answered correctly that the pre-fine tuning model did not, and vice versa, as well as
+questions that both models answered correctly or incorrectly for comparison.
