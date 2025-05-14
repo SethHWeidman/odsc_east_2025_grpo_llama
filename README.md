@@ -18,9 +18,9 @@ To:
 
 all on a single A100 GPU!
 
-![Proportion Plot](https://data-science-talks.s3.us-east-1.amazonaws.com/odsc_east_2025/images/proportion_plot.png)
+## Getting this to work
 
-## Innovations
+![Proportion Plot](https://data-science-talks.s3.us-east-1.amazonaws.com/odsc_east_2025/images/proportion_plot.png)
 
 There are other repos and tutorials showing how to use the libraries from the `transformers`
 ecosystem. **The difference with this repo is that we put the pieces together in a way that
@@ -127,8 +127,14 @@ GPUs, you may need to sign up for a $9.99/month Google Colab Pro subscription.
 4. Finally, `4_ODSC_East_2025_GRPO_on_Llama-Compare-Results.ipynb` shows how to compare the results
    of two model variants. This was used to evaluate the results pre-and-post fine-tuning.
 
-# Swap ins and outs
+# Analysis: What did the LoRa Adapters Learn? Analyzing the swap ins and outs.
 
-[Swap-ins-and-outs](swap_ins_and_outs.md) contains example questions that the post-fine
-tuning model answered correctly that the pre-fine tuning model did not, and vice versa, as well as
+[Swap-ins-and-outs](swap_ins_and_outs.md) contains example questions that the post-fine tuning
+model answered correctly that the pre-fine tuning model did not, and vice versa, as well as
 questions that both models answered correctly or incorrectly for comparison.
+
+Reviewing the swap-ins, the model seems to have gotten better at understanding _language_ in the
+context of these problems, rather than improving its understanding of math: the questions that swap
+in tend to have more unusual turns of phrase: "He responds in kind." "... the third bag has a hole
+in it, so ...", "to fill in two holes the pirates kept falling in", "cashback". This is a good
+reminder: **language models can only learn language**!
