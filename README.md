@@ -31,7 +31,7 @@ actually works**:
 - After adding the LoRa adapters, and training them in Google Colab (including lots of tips on how
   to do this, see below), the model gets **92** out of 100 answers correct!
 
-## Statistical significance
+### Statistical significance
 
 How do we know the fine-tuning process really did produce a model that "learned", as opposed to one
 that just did slightly better by chance? I'll briefly discuss how I arrived at the "73" and "92"
@@ -77,6 +77,17 @@ correct answer, with a penalty for answers less than 100 tokens, and an automati
 answer less than 50 tokens. The model could only earn up to `1.5` for formatting the answer
 correctly.
 
+### Early stopping
+
+While GRPO has many plusses as a fine-tuning algorithm, recent blog posts confirm its instability.
+My experience confirms this: while training, and calculating the loss every 25 steps, the loss
+shoots up around step 1,200, and increases thereafter! For evaluating the final fine-tuned model, I
+used the model trained for only 800 steps--which, since `per_device_train_batch_size=6` (and I only
+used one GPU), `gradient_accumulation_steps=4`, and `num_generations=6`, means the model only saw
+`800 * 6 * 4 / 6 = 3200` total examples during training!
+
+![Training loss plot](https://data-science-talks.s3.us-east-1.amazonaws.com/odsc_east_2025/images/training_loss_plot.png)
+
 ### Coding environment
 
 There were many learnings related to getting training, which took on the order of ~24 hours total
@@ -84,12 +95,6 @@ on a single A100, to work in a Google Colab environment where exiting your brows
 memory of your session. The `Training` notebook saves the training run to S3 every 25 training
 steps, optionally restarting training from a previously-saved-on-S3 checkpoint, and the
 `Fine-Tune-Results` notebook reads in an S3 checkpoint for downstream use.
-
-### Early stopping
-
-WIP
-
-![Proportion Plot](https://data-science-talks.s3.us-east-1.amazonaws.com/odsc_east_2025/images/training_loss_plot.png)
 
 ## The four notebooks
 
@@ -122,8 +127,8 @@ GPUs, you may need to sign up for a $9.99/month Google Colab Pro subscription.
 4. Finally, `4_ODSC_East_2025_GRPO_on_Llama-Compare-Results.ipynb` shows how to compare the results
    of two model variants. This was used to evaluate the results pre-and-post fine-tuning.
 
-## (WIP) Swap ins and outs
+# Swap ins and outs
 
-[Swap-ins-and-outs](problems/swap_ins_and_outs.md) contains example questions that the post-fine
+[Swap-ins-and-outs](swap_ins_and_outs.md) contains example questions that the post-fine
 tuning model answered correctly that the pre-fine tuning model did not, and vice versa, as well as
 questions that both models answered correctly or incorrectly for comparison.
