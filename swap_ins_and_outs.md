@@ -434,8 +434,8 @@ question right only two or three times out of five)
     <tr>
       <td align="center">8</td>
       <td>
-        A local gas station is selling gas for &#36;3.00 a gallon.  An app company is offering 
-        &#36;.20 cashback per gallon if you fill up at this station.  If someone buys 10 gallons of 
+        A local gas station is selling gas for \`$\`3.00 a gallon.  An app company is offering 
+        \`$\`.20 cashback per gallon if you fill up at this station.  If someone buys 10 gallons of 
         gas, how much with their gas be, after the cashback rewards?
       </td>
     </tr>
