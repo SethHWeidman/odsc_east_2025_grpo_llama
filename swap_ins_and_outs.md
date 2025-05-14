@@ -36,8 +36,8 @@ question right only two or three times out of five)
     <tr>
       <td align="center">2</td>
       <td>
-        Verna loves to eat fruit. She bought three apples at $1.50 each, five oranges at $0.80 
-        each, and six peaches at $0.75 each.  If she gave $20, how much change did she receive?
+        Verna loves to eat fruit. She bought three apples at &#36;1.50 each, five oranges at &#36;0.80 
+        each, and six peaches at &#36;0.75 each.  If she gave &#36;20, how much change did she receive?
       </td>
     </tr>
     <tr>
@@ -51,15 +51,15 @@ question right only two or three times out of five)
     <tr>
       <td align="center">4</td>
       <td>
-        A chef bought 4 bags of onions. Each bag weighs 50 pounds. A pound of onions cost $1.50. 
+        A chef bought 4 bags of onions. Each bag weighs 50 pounds. A pound of onions cost &#36;1.50. 
         How much did the chef spend?
       </td>
     </tr>
     <tr>
       <td align="center">5</td>
       <td>
-        Jayden had $70 from selling pictures he took as a hobby.  His sister Ava gave him half of 
-        her $90 allowance to help him buy a new camera that costs $200. How much more does Jayden 
+        Jayden had &#36;70 from selling pictures he took as a hobby.  His sister Ava gave him half of 
+        her &#36;90 allowance to help him buy a new camera that costs &#36;200. How much more does Jayden 
         need to buy the camera?
       </td>
     </tr>
@@ -67,8 +67,8 @@ question right only two or three times out of five)
       <td align="center">6</td>
       <td>
         To raise money for their class fund, each of the 30 students from one class sold lollipops 
-        that cost $0.8 per lollypop. On average, each student sold 10 lollipops. If they bought the 
-        lollipops for $0.5 each, how much money was the class able to raise from the profit of 
+        that cost &#36;0.8 per lollypop. On average, each student sold 10 lollipops. If they bought the 
+        lollipops for &#36;0.5 each, how much money was the class able to raise from the profit of 
         selling lollipops?
       </td>
     </tr>
@@ -76,8 +76,8 @@ question right only two or three times out of five)
       <td align="center">7</td>
       <td>
         A marketing company pays its employees on a commission-based salary system. If you sell 
-        goods worth $1000, you earn a 30% commission. Sales over $1000 get you an additional 10% 
-        commission. Calculate the amount of money Antonella earned if she sold goods worth $2500.
+        goods worth &#36;1000, you earn a 30% commission. Sales over &#36;1000 get you an additional 10% 
+        commission. Calculate the amount of money Antonella earned if she sold goods worth &#36;2500.
       </td>
     </tr>
     <tr>
@@ -124,14 +124,15 @@ question right only two or three times out of five)
     <tr>
       <td align="center">13</td>
       <td>
-      While on vacation in Bali, Thea bought a hat from a craftsman worth $70. If she gave the 
-      craftsman four $20 bills, how much change did she get?
+      While on vacation in Bali, Thea bought a hat from a craftsman worth &#36;70. If she gave the 
+      craftsman four &#36;20 bills, how much change did she get?
       </td>
     </tr>
     <tr>
       <td align="center">14</td>
       <td>
-        Suzanne sold 80 cookies for $1 each and 60 cupcakes for $4 each. She gave her two sisters $10 each for helping her. How much money does she have left from her earnings?
+        Suzanne sold 80 cookies for &#36;1 each and 60 cupcakes for &#36;4 each. She gave her two sisters 
+        &#36;10 each for helping her. How much money does she have left from her earnings?
       </td>
     </tr>
     <tr>
@@ -153,15 +154,15 @@ question right only two or three times out of five)
       <td align="center">17</td>
       <td>
         Tim decides to light off some fireworks for the fourth of July.  He buys a package of 
-        fireworks worth $400 and another pack worth twice that much.  He gets a 20% discount on 
-        them.  He also buys a finale firework that costs $150.  How much did he spend in total? 
+        fireworks worth &#36;400 and another pack worth twice that much.  He gets a 20% discount on 
+        them.  He also buys a finale firework that costs &#36;150.  How much did he spend in total? 
       </td>
     </tr>
     <tr>
       <td align="center">18</td>
       <td>
         Gary does laundry twice a week. Each load of laundry uses 20 gallons of water, and a gallon 
-        of water costs $0.15. How much does Gary spend on water for laundry in a year?
+        of water costs &#36;0.15. How much does Gary spend on water for laundry in a year?
       </td>
     </tr>
     <tr>
@@ -199,7 +200,7 @@ question right only two or three times out of five)
     <tr>
       <td align="center">23</td>
       <td>
-        Jimmy has $2 more than twice the money Ethel has. If Ethal has $8, how much money is Jimmy 
+        Jimmy has &#36;2 more than twice the money Ethel has. If Ethal has &#36;8, how much money is Jimmy 
         having?
       </td>
     </tr>
@@ -214,7 +215,7 @@ question right only two or three times out of five)
     <tr>
       <td align="center">25</td>
       <td>
-        John goes to the market and buys 3 goats for $500 each and 2 cows for $1500 each.  How much 
+        John goes to the market and buys 3 goats for &#36;500 each and 2 cows for &#36;1500 each.  How much 
         money did he spend?
       </td>
     </tr>
@@ -340,8 +341,8 @@ question right only two or three times out of five)
     <tr>
       <td align="center">42</td>
       <td>
-        Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 
-        for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how much money did 
+        Bailey starts with a certain amount of money. Then she receives a weekly allowance of &#36;5 
+        for 8 weeks. At the end of the 8 weeks, if she has a total of &#36;100, how much money did 
         Bailey start with?
       </td>
     </tr>
@@ -381,9 +382,9 @@ question right only two or three times out of five)
       <td>
         Mike decides he wants to replace his movie collection with digital versions.  He has 600 
         movies.  A third of the movies are in various series and he knows he can get those for only 
-        $6 of the cost of a normal movie by just buying the series together.  40% of the remaining 
-        movies are older movies which are $5.  How much does replacing the movies cost if a normal 
-        movie costs $10?
+        &#36;6 of the cost of a normal movie by just buying the series together.  40% of the remaining 
+        movies are older movies which are &#36;5.  How much does replacing the movies cost if a normal 
+        movie costs &#36;10?
       </td>
     </tr>
     <tr>
@@ -425,8 +426,8 @@ question right only two or three times out of five)
     <tr>
       <td align="center">7</td>
       <td>
-        Janet buys a brooch for her daughter.  She pays $500 for the material to make it and then 
-        another $800 for the jeweler to construct it.  After that, she pays 10% of that to get it 
+        Janet buys a brooch for her daughter.  She pays &#36;500 for the material to make it and then 
+        another &#36;800 for the jeweler to construct it.  After that, she pays 10% of that to get it 
         insured.  How much did she pay?
       </td>
     </tr>
@@ -508,9 +509,9 @@ question right only two or three times out of five)
     <tr>
       <td align="center">3</td>
       <td>
-        An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 
+        An interior design firm offers installation for &#36;129.00.  It includes hanging 4 mirrors, 2 
         shelves, 1 chandelier, and 10 pictures.  They will install additional items for an extra 
-        $15.00 per item.  Angela has 6 mirrors and 2 chandeliers and 20 pictures that she needs 
+        &#36;15.00 per item.  Angela has 6 mirrors and 2 chandeliers and 20 pictures that she needs 
         installed/hung.  How much will this cost her?
       </td>
     </tr>
@@ -536,7 +537,7 @@ question right only two or three times out of five)
       <td align="center">6</td>
       <td>
         Carolyn works for a delivery service company that hires on a contract basis. In May, they 
-        hired 40 employees, paying each employee $15 per hour for a 40-hour workweek. In June, 1/4 
+        hired 40 employees, paying each employee &#36;15 per hour for a 40-hour workweek. In June, 1/4 
         of the employees' contracts expired. Calculate the total amount of money the company paid 
         to the employees in the two months.
       </td>
@@ -560,8 +561,8 @@ question right only two or three times out of five)
     <tr>
       <td align="center">9</td>
       <td>
-        Jason was told he could earn $3.00 for doing his laundry,  $1.50 for cleaning his room, 
-        $0.75 for taking the trash to the curb each week and $0.50 for emptying the dishwasher.  
+        Jason was told he could earn &#36;3.00 for doing his laundry,  &#36;1.50 for cleaning his room, 
+        &#36;0.75 for taking the trash to the curb each week and &#36;0.50 for emptying the dishwasher.  
         In a two week period, Jason emptied the dishwasher 6 times, did his laundry once, took the 
         trash out twice and cleaned his room once.  How much money did Jason earn? 
       </td>
@@ -569,7 +570,7 @@ question right only two or three times out of five)
     <tr>
       <td align="center">10</td>
       <td>
-        90 single use contacts come in 1 box and will last Pete 45 days.  Each box is $100.00 and 
+        90 single use contacts come in 1 box and will last Pete 45 days.  Each box is &#36;100.00 and 
         currently 10% off.  If he buys 2 boxes of contact, how much will each pair of contacts 
         cost?
       </td>
