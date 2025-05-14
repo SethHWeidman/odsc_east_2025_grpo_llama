@@ -154,7 +154,7 @@ question right only two or three times out of five)
       <td>
         Tim decides to light off some fireworks for the fourth of July.  He buys a package of 
         fireworks worth $400 and another pack worth twice that much.  He gets a 20% discount on 
-        them.  He also buys a finale firework that costs $150.  How much did he spend in total?
+        them.  He also buys a finale firework that costs $150.  How much did he spend in total? 
       </td>
     </tr>
     <tr>
