@@ -563,7 +563,7 @@ question right only two or three times out of five)
         Jason was told he could earn $3.00 for doing his laundry,  $1.50 for cleaning his room, 
         $0.75 for taking the trash to the curb each week and $0.50 for emptying the dishwasher.  
         In a two week period, Jason emptied the dishwasher 6 times, did his laundry once, took the 
-        trash out twice and cleaned his room once.  How much money did Jason earn?
+        trash out twice and cleaned his room once.  How much money did Jason earn? 
       </td>
     </tr>
     <tr>
