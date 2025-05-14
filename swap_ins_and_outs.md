@@ -319,8 +319,8 @@ question right only two or three times out of five)
       <td align="center">39</td>
       <td>
         A tomato vendor decides to switch who he buys his tomatoes for.  He sells 500 tomatoes a 
-        day.  He used to buy them for $.5 each but he gets a new vendor who sells them for $.4 
-        each.  How much money does he save a week?
+        day.  He used to buy them for &#36;.5 each but he gets a new vendor who sells them for 
+        &#36;.4 each.  How much money does he save a week?
       </td>
     </tr>
     <tr>
@@ -433,9 +433,9 @@ question right only two or three times out of five)
     <tr>
       <td align="center">8</td>
       <td>
-        A local gas station is selling gas for \$3.00 a gallon.  An app company is offering \$.20 
-        cashback per gallon if you fill up at this station.  If someone buys 10 gallons of gas, how 
-        much with their gas be, after the cashback rewards?
+        A local gas station is selling gas for &#36;3.00 a gallon.  An app company is offering 
+        &#36;.20 cashback per gallon if you fill up at this station.  If someone buys 10 gallons of 
+        gas, how much with their gas be, after the cashback rewards?
       </td>
     </tr>
     <tr>
